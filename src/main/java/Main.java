@@ -3,8 +3,8 @@ import model.Food;
 import model.Meat;
 import model.service.ShoppingCart;
 
-import static model.constants.Colour.colorGreen;
-import static model.constants.Colour.colorRed;
+import static model.constants.Colour.COLOR_GREEN;
+import static model.constants.Colour.COLOR_RED;
 
 public class Main {
     public static void main(String[] args){
@@ -12,10 +12,10 @@ public class Main {
         Meat meat = new Meat(5,100.0);
 
         //Яблоки красные в количестве 10 кг по цене 50 рублей
-        Apple appleRed = new Apple(10, 50.0, colorRed);
+        Apple appleRed = new Apple(10, 50.0, COLOR_RED);
 
         //Яблоки зелёные в количестве 8 кг по цене 60 рублей
-        Apple appleGreen = new Apple(8, 60.0, colorGreen);
+        Apple appleGreen = new Apple(8, 60.0, COLOR_GREEN);
 
         //массив продуктов
         Food[] items = {meat, appleRed, appleGreen};
